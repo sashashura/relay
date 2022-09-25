@@ -2,8 +2,11 @@ name: Publish Relay VS Code Extension
 on:
   workflow_dispatch:
 
+permissions: {}
 jobs:
   vscode-release:
+    permissions:
+      contents: write
     name: VSCode Extension Release
     runs-on: ubuntu-latest
     defaults:
